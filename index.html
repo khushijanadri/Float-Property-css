@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Property</title>
+    <style>
+        .a {
+            float: center;
+            width: 120px;
+            height: 80px;
+        }
+
+        header {
+            background-color: rgba(240, 234, 226, 0.87);
+            padding: 1px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .box {
+            background-color: rgba(238, 236, 233, 0.877);
+            border-radius: 15px;
+            margin: 20px 80px;
+            padding-bottom: 4%;
+        }
+
+        #imga {
+            width: 98px;
+            height: 110px;
+            float: left;
+            padding-left: 13px;
+        }
+
+        #imgb {
+            width: 98px;
+            height: 110px;
+            float: right;
+            padding-right: 13px;
+        }
+
+        p {
+            text-transform: capitalize;
+            word-spacing: 3px;
+            margin-left: 23px;
+        }
+
+        .box1 p {
+            margin-left: 120px;
+            margin-right: 40px;
+        }
+
+        .box2 p {
+            margin-right: 99px;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 10px;
+            text-shadow: 200px black;
+        }
+
+        body {
+            background-color: rgb(240, 120, 22);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .box:hover {
+            transform: scale(1.02);
+            box-shadow: 12px 15px 14px red;
+        }
+        @media only screen and (max-width:630px) and (min-width: 300px){
+           .box{
+            margin: 20px;
+           }
+        }
+        @media only screen and (max-width:780px) and (min-width:630px){
+            .box{
+                margin: 30px;
+            }
+        }
+        @media only screen and (max-width:300px) and (min-width:0px) {
+            .box{
+                margin:0px;
+            }
+            #imga , #imgb{
+                float: none;
+                margin-left: 55px;
+            }
+            .box1 p,.box2 p{
+                margin-left: 4px;
+                margin-right: 3px;
+            }
+            #imgb{
+                margin-left: 65px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <img class="a"
+                src="https://img.favpng.com/21/9/23/international-yoga-day-png-favpng-xYRGiRUJMTfphSuhvvVP82dZF.jpg">
+            <h1>4 Major Types of Yoga</h1>
+        </header>
+        <div class="box box1">
+            <h2>Karma Yoga</h2>
+            <img class="karmayoga" id="imga"
+                src="https://m.media-amazon.com/images/I/61u-eZW4fsL._UF1000,1000_QL80_.jpg">
+            <p>Karma Yoga is the path of selfless action and service, one of the four classical paths of yoga, aimed at
+                spiritual liberation. It emphasizes performing duties without attachment to the results, offering
+                actions as a form of worship, and dedicating oneself to work without ego or desire for personal gain.
+            </p>
+        </div>
+        <div class="box box2">
+            <h2>Bhakti Yoga</h2>
+            <img class="Bhaktiyoga" id="imgb"
+                src="https://rekhtabooks.com/cdn/shop/files/9789362084460.jpg?v=1720069728">
+            <p>Bhakti Yoga, also known as the "path of love and devotion," is a spiritual practice within Hinduism that
+                emphasizes loving devotion to a personal deity as a means to achieve liberation (moksha). It involves
+                cultivating a deep, personal relationship with the divine, often through practices like prayer,
+                chanting, and selfless service. </p>
+        </div>
+        <div class="box box1">
+            <h2>Raja Yoga</h2>
+            <img class="rajayoga" id="imga"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwK6cxqyNv71mwdaYm_U_od42Zya5OD86rcA&s"
+                alt="">
+            <p>Rāja Yoga, also known as Ashtanga Yoga or the "Royal Path," is a system of yoga emphasizing mental
+                discipline and meditation for self-realization. It is considered one of the four classical paths of
+                yoga, focusing on controlling the mind and its fluctuations to achieve inner peace and spiritual
+                liberation. </p>
+        </div>
+        <div class="box box2">
+            <h2>Jñāna Yoga</h2>
+            <img class="jnanayoga" id="imgb"
+                src="https://m.media-amazon.com/images/I/719Y-cw5XYL._UF1000,1000_QL80_.jpg" alt="">
+            <p>Jnana Yoga, also known as the "path of knowledge," is one of the three classical paths to liberation
+                (moksha) in Hinduism, alongside Karma Yoga and Bhakti Yoga. It emphasizes the use of intellect and
+                self-inquiry to realize the true nature of reality and one's own self. Through discrimination between
+                the real and the unreal, and by understanding the interconnectedness of all things, practitioners aim to
+                transcend the limitations of the ego and achieve liberation</p>
+        </div>
+    </div>
+</body>
+
+</html>
